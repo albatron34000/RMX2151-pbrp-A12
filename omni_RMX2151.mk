@@ -26,6 +26,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/pb/config/common.mk)
+
 # Inherit from begonia device
 $(call inherit-product, device/realme/RMX2151/device.mk)
 
